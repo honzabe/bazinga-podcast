@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronald Martini and his English camps</title>
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <style>
+        html {
+            background: linear-gradient(to bottom, #ffffff, #e6f7ff);
+            min-height: 100%;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1000px;
+            margin: 100px auto;
+            font-family: Gordita,Avenir,Helvetica Neue,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+            font-size: 1.1rem;
+            color: #4a5764;
+            line-height: 2rem;
+        }
+        .left_column, .right_column {
+            flex: 1;
+            padding: 20px;
+        }
+        .plyr {
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            background-color: #fff;
+        }
+        h1 {
+            color: #00b2ff;
+            font-size: 4rem;
+        }
+        .note {
+            font-size: 0.95rem;
+            padding-top: 20px;
+        }
+        @media (min-width: 768px) {
+            #container {
+                flex-direction: row;
+                margin-top: 30px;
+            }
+            .left_column {
+                max-width: 50%;
+            }
+            .right_column {
+                max-width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <div class="left_column">
+        <h1>Ronec</h1>
+        <p>
+            <b>Episode #148</b>
+            <br>
+            About Ronald Martini and his English camps
+        </p>
+    </div>
+    
+    <div class="right_column">
+        <br>
+        <br>
+        <audio id="player" controls>
+            <source src="rony-podcast.wav" type="audio/mp3" />
+        </audio>
+        <div class="note">More info at <a href="msg.html">here</a>.</din>
+    </div>
+    
+
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script>
+        const player = new Plyr('#player');
+    </script>
+</div>
+    
+</body>
+</html>
